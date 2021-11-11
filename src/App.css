@@ -14,3 +14,29 @@
         height: auto;
     }
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #dc2727;
+    border-radius: 2rem;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #dc2727;
+}

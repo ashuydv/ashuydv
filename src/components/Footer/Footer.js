@@ -7,7 +7,6 @@ const Footer = () => {
   return (
     <div>
       <ScrollToTop
-        smooth
         component={<FaChevronUp />}
         style={{
           color: "white",
@@ -17,7 +16,7 @@ const Footer = () => {
           boxShadow: "0px 0px 5px rgba(0,0,0,.5)",
         }}
       />
-      <footer className="text-gray-400 bg-black body-font relative">
+      <footer className="text-gray-400 bg-black body-font relative rounded-t-lg shadow-md">
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a
             href="#"
