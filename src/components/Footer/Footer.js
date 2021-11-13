@@ -7,6 +7,7 @@ const Footer = () => {
   return (
     <div>
       <ScrollToTop
+        smooth
         component={<FaChevronUp />}
         style={{
           color: "white",
@@ -20,23 +21,35 @@ const Footer = () => {
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a
             href="#"
-            class="flex title-font font-medium items-center md:justify-start justify-center text-white"
+            className="flex title-font font-medium items-center md:justify-start justify-center text-white"
           >
             <img src={logo} className="w-10 h-10 rounded-full" alt="" />
-            <span class="ml-3 text-xl">Ashutosh</span>
+            <span className="ml-3 text-xl">Ashutosh</span>
           </a>
           <span className="flex items-center sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a className="text-gray-400 hover:text-red-400" href="#">
-              <i class="fab fa-twitter" aria-hidden="true"></i>
+            <a
+              className="text-gray-400 hover:text-red-400"
+              href="https://twitter.com/ashu_ydv18"
+            >
+              <i className="fab fa-twitter" aria-hidden="true"></i>
             </a>
-            <a className="ml-3 text-gray-400 hover:text-red-400" href="#">
-              <i class="fab fa-linkedin-in    "></i>
+            <a
+              className="ml-3 text-gray-400 hover:text-red-400"
+              href="https://www.linkedin.com/in/ashutoshyadav3465/"
+            >
+              <i className="fab fa-linkedin-in"></i>
             </a>
-            <a className="ml-3 text-gray-400 hover:text-red-400" href="#">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
+            <a
+              className="ml-3 text-gray-400 hover:text-red-400"
+              href="https://www.instagram.com/ashu_ydv18/"
+            >
+              <i className="fab fa-instagram" aria-hidden="true"></i>
             </a>
-            <a className="ml-3 text-gray-400 hover:text-red-400" href="#">
-              <i class="fab fa-facebook-f text-sm" aria-hidden="true"></i>
+            <a
+              className="ml-3 text-gray-400 hover:text-red-400"
+              href="https://www.facebook.com/profile.php?id=100039132562954"
+            >
+              <i className="fab fa-facebook-f text-sm" aria-hidden="true"></i>
             </a>
           </span>
         </div>

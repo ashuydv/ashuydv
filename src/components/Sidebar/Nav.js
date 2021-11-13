@@ -119,18 +119,22 @@ function Nav() {
                 <Link to="/services" class="mr-5 hover:text-red-300 px-4 py-1">
                   Services
                 </Link>
-                <Link to="/" class="mr-5 hover:text-red-300 px-4 py-1">
+                <Link to="/experiences" class="mr-5 hover:text-red-300 px-4 py-1">
                   Experiences
                 </Link>
-                <Link to="/" class="mr-5 hover:text-red-300 px-4 py-1">
+                <Link to="/works" class="mr-5 hover:text-red-300 px-4 py-1">
                   Works
                 </Link>
-                <Link to="/" class="mr-5 hover:text-red-300 px-4 py-1">
+                <Link to="/contact" class="mr-5 hover:text-red-300 px-4 py-1">
                   Contact
                 </Link>
+                <a href="mailto:ashu.ydv2001@gmail.com">
+              
                 <button class="inline-flex items-center bg-gradient-to-br from-red-600 to-red-900 border-0 py-1 px-3 focus:outline-none hover:bg-purple-600 rounded text-base mt-4 md:mt-0 text-white shadow-inner mx-auto">
                   Mail me
-                </button>
+              
+              </button>
+              </a>
               </div>
             </div>
           )}

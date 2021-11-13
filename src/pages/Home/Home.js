@@ -14,7 +14,8 @@ import startup from "../../assets/img/startup.svg";
 import freelancer from "../../assets/img/freelancer.svg";
 import upgrade from "../../assets/img/upgrade.svg";
 import web from "../../assets/img/web.svg";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
+import CalendlyMeet from "./CalendlyMeet";
 
 const Home = () => {
   const settings = {
@@ -144,7 +145,7 @@ const Home = () => {
         </div>
         <div className="pt-5 overflow-hidden">
           <svg
-            class="waves overflow-hidden"
+            className="waves overflow-hidden"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28"
@@ -157,7 +158,7 @@ const Home = () => {
                 d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
               />
             </defs>
-            <g class="parallax">
+            <g className="parallax">
               <use
                 xlinkHref="#gentle-wave"
                 x="48"
@@ -304,7 +305,8 @@ const Home = () => {
                   </div>
                   <div className="flex-grow">
                     <p className="leading-relaxed text-base">
-                      I deliver landing pages, that are precise, easy to the eyes, user friendly, responsive and pixel-perfect.
+                      I deliver landing pages, that are precise, easy to the
+                      eyes, user friendly, responsive and pixel-perfect.
                     </p>
                   </div>
                 </div>
@@ -331,20 +333,20 @@ const Home = () => {
                     </h2>
                   </div>
                   <div className="flex-grow">
-                    <p className="leading-relaxed text-base"> 
-                      I can host your website and connect it to the domain, after having a detailed conversation.
+                    <p className="leading-relaxed text-base">
+                      I can host your website and connect it to the domain,
+                      after having a detailed conversation.
                     </p>
                   </div>
                 </div>
               </div>
             </Slider>
           </div>
-          <Link to='/services'>
-          <button className="flex mx-auto mt-16 text-black bg-gradient-to-br from-gray-50 to-red-300 shadow-xl border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            View More
-          </button>
+          <Link to="/services">
+            <button className="flex mx-auto mt-16 text-black bg-gradient-to-br from-gray-50 to-red-300 shadow-xl border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              View More
+            </button>
           </Link>
-
         </div>
       </section>
       <section className="text-gray-400 bg-gray-50 body-font  rounded-xl">
@@ -423,20 +425,21 @@ const Home = () => {
               Know more about me
             </h1>
             <p className="mb-8 leading-relaxed">
-              I'm a Frontend Developer, an open-source enthusiast, a freelancer based in Mumbai, India.
-              Currently, I'm pursuing engineering from PVPPCOE. My hobbies are
-              reading books, exploring new things, taking up new challenges,
-              learning and deep diving into new and upcoming technologies.
+              I'm a Frontend Developer, an open-source enthusiast, a freelancer
+              based in Mumbai, India. Currently, I'm pursuing engineering from
+              PVPPCOE. My hobbies are reading books, exploring new things,
+              taking up new challenges, learning and deep diving into new and
+              upcoming technologies.
             </p>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-gradient-to-br from-red-600 to-red-900 border-0 py-2 px-6 focus:outline-none shadow-xl rounded text-lg">
-                Have a Project ?
-              </button>
+              <CalendlyMeet/></button>
               <a href="mailto:ashu.ydv2001@gmail.com">
-              <button className="ml-4 inline-flex text-gray-700 border-0 py-2 px-6 focus:outline-none bg-gray-200 rounded text-lg shadow-xl">
-                Mail me
-              </button>
+                <button className="ml-4 inline-flex text-gray-700 border-0 py-2 px-6 focus:outline-none bg-gray-200 rounded text-lg shadow-xl">
+                  Mail me
+                </button>
               </a>
+              
             </div>
           </div>
         </div>
@@ -457,7 +460,7 @@ const Home = () => {
               <div className="border-2 border-gray-100 px-4 py-6 rounded-lg shadow-md hover:border-red-600 hover:shadow-lg">
                 <i className="fas fa-user-tie text-red-700 text-5xl mb-3"></i>
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  <CountUp start={0} end={100} duration={3} />
+                  <CountUp start={0} end={5} duration={3} />
                 </h2>
                 <p className="leading-relaxed">Freelancing Clients</p>
               </div>
@@ -486,7 +489,12 @@ const Home = () => {
         </div>
       </section>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto w-11/12">
+        <div className=" container-2 px-5 py-24 mx-auto">
+          <div className="text-center mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+              What Clients Say About Me ?
+            </h1>
+          </div>
           <Slider {...settings}>
             <div className="w-60 mx-auto text-center mb-4">
               <svg
@@ -497,14 +505,16 @@ const Home = () => {
               >
                 <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
               </svg>
-              <p className="leading-relaxed text-lg">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis minus, recusandae repudiandae totam eaque magnam voluptas assumenda vitae obcaecati sed!
+              <p className="leading-relaxed text-lg w-9/12 mx-auto">
+                Ashutosh is a hardworking person with lots of dedication to any
+                work he take. Follow deadlines and make sure that he delivers
+                the work with highest possible quality.
               </p>
               <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
               <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                HOLDEN CAULFIELD
+                AKANKSHA WAGH
               </h2>
-              <p className="text-gray-500">Senior Product Designer</p>
+              <p className="text-gray-500">HR - GenieGradz</p>
             </div>
             <div className="w-60 mx-auto text-center mb-4">
               <svg
@@ -515,14 +525,17 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis minus, recusan
               >
                 <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
               </svg>
-              <p className="leading-relaxed text-lg">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis minus, recusandae repudiandae totam eaque magnam voluptas assumenda vitae obcaecati sed!
+              <p className="leading-relaxed text-lg w-9/12 mx-auto">
+                Amazing work quality. Task Completion Rate - 100%, Really good
+                at understanding and applying customer's demands. Best thing is
+                that he takes intiative and try to make a better product,
+                irrespective of whether it was asked or not.
               </p>
               <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
               <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                HOLDEN CAULFIELD
+                SATAKSHI GARG
               </h2>
-              <p className="text-gray-500">Senior Product Designer</p>
+              <p className="text-gray-500">FOUNDER - PPH</p>
             </div>
             <div className="w-60 mx-auto text-center mb-4">
               <svg
@@ -533,14 +546,19 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis minus, recusan
               >
                 <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
               </svg>
-              <p className="leading-relaxed text-lg">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis minus, recusandae repudiandae totam eaque magnam voluptas assumenda vitae obcaecati sed!
+              <p className="leading-relaxed text-lg w-9/12 mx-auto">
+                Ash has been a crucial player to our team he helped us building
+                the complete end to end website in a short duration of time with
+                0 delays, In a remote setup he has always been responsive for
+                all of our questions in no time. We loved working with the
+                professional and proactive way that he inculcate. We hope to
+                work with him again.
               </p>
               <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
               <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                HOLDEN CAULFIELD
+                PRASAD SHELKE
               </h2>
-              <p className="text-gray-500">Senior Product Designer</p>
+              <p className="text-gray-500">CO-FOUNDER - EVENTSFLOCK </p>
             </div>
             <div className="w-60 mx-auto text-center mb-4">
               <svg
@@ -551,14 +569,16 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis minus, recusan
               >
                 <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
               </svg>
-              <p className="leading-relaxed text-lg">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis minus, recusandae repudiandae totam eaque magnam voluptas assumenda vitae obcaecati sed!
+              <p className="leading-relaxed text-lg w-9/12 mx-auto">
+                Your work was creative and delivery was quick. I appreciate the
+                extra time and effort made to make it look better than what was
+                asked. Look forward to working on future projects 👍🏻
               </p>
               <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
               <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                HOLDEN CAULFIELD
+                KUNAL AGARWAL
               </h2>
-              <p className="text-gray-500">Senior Product Designer</p>
+              <p className="text-gray-500">FREELANCING CLIENT</p>
             </div>
             <div className="w-60 mx-auto text-center mb-4">
               <svg
@@ -569,14 +589,14 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis minus, recusan
               >
                 <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
               </svg>
-              <p className="leading-relaxed text-lg">
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis minus, recusandae repudiandae totam eaque magnam voluptas assumenda vitae obcaecati sed!
+              <p className="leading-relaxed text-lg w-9/12 mx-auto">
+              Ashutosh is a amazing front end developer. We have worked together as a team on two projects where he designed pixel perfect front end designs according to clients needs.
               </p>
               <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
               <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                HOLDEN CAULFIELD
+                MOHIT HARGE
               </h2>
-              <p className="text-gray-500">Senior Product Designer</p>
+              <p className="text-gray-500">FREELANCING CLIENT</p>
             </div>
           </Slider>
         </div>

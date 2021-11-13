@@ -1,6 +1,5 @@
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
-import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Footer from "./components/Footer/Footer";
@@ -9,8 +8,17 @@ import Experiences from "./pages/Experiences";
 import Works from "./pages/Works";
 import Contact from "./pages/Contact";
 import Nav from "./components/Sidebar/Nav";
+import ReactGa from 'react-ga';
+import {useEffect} from 'react'
 
 function App() {
+
+  useEffect(() => {
+    ReactGa.initialize("G-P8EEHZM6DY");
+
+    ReactGa.pageview(window.location.pathname);
+  })
+ 
   return (
     <div className="App">
       <Nav/>
@@ -24,7 +32,7 @@ function App() {
       </Switch>
       <Footer />
     </div>
-  );
+  ); 
 }
 
 export default App;
