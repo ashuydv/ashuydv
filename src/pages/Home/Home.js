@@ -16,6 +16,7 @@ import upgrade from "../../assets/img/upgrade.svg";
 import web from "../../assets/img/web.svg";
 import { Link } from "react-router-dom";
 import CalendlyMeet from "./CalendlyMeet";
+import clients from "./clients";
 
 const Home = () => {
   const settings = {
@@ -104,7 +105,7 @@ const Home = () => {
         <div className="container mx-auto flex px-5 lg:py-44 lg:pb-0 md:py-24 md:pb-0 md:flex-row items-center py-40 pb-0 flex-col-reverse">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
-              <span className=" text-xl">Hello, I'm a</span>
+              <span className=" text-xl">Hello, I'm</span>
               <br className="inline-block" />
               <ReactTypingEffect
                 speed="150"
@@ -113,11 +114,14 @@ const Home = () => {
                 typingDelay="150"
                 smooth
                 text={[
-                  "Frontend Developer ",
-                  "Freelancer ",
-                  "Explorer",
-                  "Startup Enthusiast",
-                  "",
+                  "a Frontend Developer ",
+                  "a Blockchain Enthusiast",
+                  "a Researcher",
+                  "and a Technical Writer",
+                  "a Freelancer ",
+                  "an Explorer",
+                  "a Startup Enthusiast",
+                  "an Entrepreneur",
                 ]}
               />
             </h1>
@@ -128,7 +132,7 @@ const Home = () => {
                 </button>
               </a>
               <a href="#">
-                <button className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-md shadow-md">
+                <button className="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none transition-all hover:bg-white rounded text-md shadow-md">
                   Hire Me
                 </button>
               </a>
@@ -433,13 +437,13 @@ const Home = () => {
             </p>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-gradient-to-br from-red-600 to-red-900 border-0 py-2 px-6 focus:outline-none shadow-xl rounded text-lg">
-              <CalendlyMeet/></button>
+                <CalendlyMeet />
+              </button>
               <a href="mailto:ashu.ydv2001@gmail.com">
                 <button className="ml-4 inline-flex text-gray-700 border-0 py-2 px-6 focus:outline-none bg-gray-200 rounded text-lg shadow-xl">
                   Mail me
                 </button>
               </a>
-              
             </div>
           </div>
         </div>
@@ -447,25 +451,25 @@ const Home = () => {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4 text-center">
-            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
               <div className="border-2 border-gray-100 px-4 py-6 rounded-lg shadow-md hover:border-red-600 hover:shadow-lg">
                 <i className="fas fa-wrench text-red-700 text-5xl mb-3"></i>
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  <CountUp start={0} end={12} duration={5} />
+                  <CountUp start={0} end={15} duration={5} />
                 </h2>
                 <p className="leading-relaxed">Projects</p>
               </div>
             </div>
-            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
               <div className="border-2 border-gray-100 px-4 py-6 rounded-lg shadow-md hover:border-red-600 hover:shadow-lg">
                 <i className="fas fa-user-tie text-red-700 text-5xl mb-3"></i>
                 <h2 className="title-font font-medium text-3xl text-gray-900">
-                  <CountUp start={0} end={5} duration={3} />
+                  <CountUp start={0} end={7} duration={3} />
                 </h2>
                 <p className="leading-relaxed">Freelancing Clients</p>
               </div>
             </div>
-            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
               <div className="border-2 border-gray-100 px-4 py-6 rounded-lg shadow-md hover:border-red-600 hover:shadow-lg">
                 <i className="fas fa-hands-helping text-red-700 text-5xl mb-3"></i>
                 <h2 className="title-font font-medium text-3xl text-gray-900">
@@ -473,16 +477,6 @@ const Home = () => {
                   <span className=" ml-1">yrs</span>
                 </h2>
                 <p className="leading-relaxed">Experience</p>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div className="border-2 border-gray-100 px-4 py-6 rounded-lg shadow-md hover:border-red-600 hover:shadow-lg">
-                <i className="fas fa-percentage text-red-700 text-5xl mb-3"></i>
-                <h2 className="title-font font-medium text-3xl text-gray-900">
-                  <CountUp start={0} end={8} duration={5} />
-                  <span className=" ml-2">/ 10</span>
-                </h2>
-                <p className="leading-relaxed">College Percentile</p>
               </div>
             </div>
           </div>
@@ -496,108 +490,30 @@ const Home = () => {
             </h1>
           </div>
           <Slider {...settings}>
-            <div className="w-60 mx-auto text-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                className="inline-block w-8 h-8 text-red-800 mb-8"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-              </svg>
-              <p className="leading-relaxed text-lg w-9/12 mx-auto">
-                Ashutosh is a hardworking person with lots of dedication to any
-                work he take. Follow deadlines and make sure that he delivers
-                the work with highest possible quality.
-              </p>
-              <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
-              <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                AKANKSHA WAGH
-              </h2>
-              <p className="text-gray-500">HR - GenieGradz</p>
-            </div>
-            <div className="w-60 mx-auto text-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                className="inline-block w-8 h-8 text-red-800 mb-8"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-              </svg>
-              <p className="leading-relaxed text-lg w-9/12 mx-auto">
-                Amazing work quality. Task Completion Rate - 100%, Really good
-                at understanding and applying customer's demands. Best thing is
-                that he takes intiative and try to make a better product,
-                irrespective of whether it was asked or not.
-              </p>
-              <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
-              <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                SATAKSHI GARG
-              </h2>
-              <p className="text-gray-500">FOUNDER - PPH</p>
-            </div>
-            <div className="w-60 mx-auto text-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                className="inline-block w-8 h-8 text-red-800 mb-8"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-              </svg>
-              <p className="leading-relaxed text-lg w-9/12 mx-auto">
-                Ash has been a crucial player to our team he helped us building
-                the complete end to end website in a short duration of time with
-                0 delays, In a remote setup he has always been responsive for
-                all of our questions in no time. We loved working with the
-                professional and proactive way that he inculcate. We hope to
-                work with him again.
-              </p>
-              <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
-              <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                PRASAD SHELKE
-              </h2>
-              <p className="text-gray-500">CO-FOUNDER - EVENTSFLOCK </p>
-            </div>
-            <div className="w-60 mx-auto text-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                className="inline-block w-8 h-8 text-red-800 mb-8"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-              </svg>
-              <p className="leading-relaxed text-lg w-9/12 mx-auto">
-                Your work was creative and delivery was quick. I appreciate the
-                extra time and effort made to make it look better than what was
-                asked. Look forward to working on future projects 👍🏻
-              </p>
-              <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
-              <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                KUNAL AGARWAL
-              </h2>
-              <p className="text-gray-500">FREELANCING CLIENT</p>
-            </div>
-            <div className="w-60 mx-auto text-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                className="inline-block w-8 h-8 text-red-800 mb-8"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-              </svg>
-              <p className="leading-relaxed text-lg w-9/12 mx-auto">
-              Ashutosh is a amazing front end developer. We have worked together as a team on two projects where he designed pixel perfect front end designs according to clients needs.
-              </p>
-              <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
-              <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                MOHIT HARGE
-              </h2>
-              <p className="text-gray-500">FREELANCING CLIENT</p>
-            </div>
+            {
+              clients.map((client) => {
+                return (
+                  <div className="w-60 mx-auto text-center mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    className="inline-block w-8 h-8 text-red-800 mb-8"
+                    viewBox="0 0 975.036 975.036"
+                  >
+                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                  </svg>
+                  <p className="leading-relaxed text-lg w-9/12 mx-auto">
+                    {client.desc}
+                  </p>
+                  <span className="inline-block h-1 w-10 rounded bg-gradient-to-br from-red-600 to-red-900 mt-8 mb-6"></span>
+                  <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
+                    {client.name}
+                  </h2>
+                  <p className="text-gray-500">{client.company}</p>
+                </div>                 
+                )
+              } )
+            }
           </Slider>
         </div>
       </section>

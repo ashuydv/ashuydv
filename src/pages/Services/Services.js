@@ -1,16 +1,9 @@
 import React from "react";
-import portfolioWebsite from "../assets/img/portfolioWebsite.png";
-
-import staticWebsite from "../assets/img/staticWebsite.png";
-
-import seo from "../assets/img/seo.png";
-
-import landingPage from "../assets/img/landingPage.png";
-
-import psd2html from "../assets/img/psd2html.png";
-
-import bugs from "../assets/img/bugs.png";
-
+import portfolioWebsite from "../../assets/img/portfolioWebsite.png";
+import staticWebsite from "../../assets/img/staticWebsite.png";
+import seo from "../../assets/img/seo.png";
+import landingPage from "../../assets/img/landingPage.png";
+import psd2html from "../../assets/img/psd2html.png";
 
 const Services = () => {
   return (
@@ -86,7 +79,7 @@ const Services = () => {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center opacity-0 hover:opacity-100 transition-all z-30 hover:border-red-900 bg-white rounded-md"
-                  src={bugs}
+                  src={landingPage}
                 />
                 <div className="px-8 py-10 relative z-10 w-full">
                   <h1 className="title-font text-lg font-medium text-red-700 mb-3">

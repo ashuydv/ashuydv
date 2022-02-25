@@ -1,4 +1,6 @@
+import { send } from "emailjs-com";
 import React, { useState } from "react";
+import SweetAlert from 'sweetalert2'
 
 const Contact = () => {
   const [userData, setUserData] = useState({
@@ -18,37 +20,30 @@ const Contact = () => {
   const submitData = async (event) => {
     event.preventDefault();
     const { name, email, message } = userData;
-    
-    if( name && email && message) {
-      
-    const res = fetch(
-      "https://ashuydv-ae3ee-default-rtdb.firebaseio.com/userDateRecords.json",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          message,
-        }),
-      }
-    );
 
-    if (res) {
+    send(
+      "service_f22pna8",
+      "template_uily6k6",
+      userData,
+      "user_Nz40lrmMUiWlHRD0TnzLG"
+    )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("Failed...", err);
+      });
+
+    if (name && email && message) {
       setUserData({
         name: "",
         email: "",
         message: "",
       });
-      alert("Will get back to you soon !!");
+      alert('Message Sent')
     } else {
-      alert("plz fill the details");
+      alert("hello");
     }
-  } else {
-    alert("plz fill the details");
-  }
   };
 
   return (
@@ -98,7 +93,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="p-2 w-full">
+              <div className=" px-2 py-4 w-full">
                 <div className="relative">
                   <label
                     for="message"
@@ -109,7 +104,7 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-red-500 focus:bg-white focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-red-500 focus:bg-white focus:ring-2 focus:ring-red-200 h-32 text-base outline-none text-gray-700 p-2 resize-none leading-6 transition-colors duration-200 ease-in-out"
                     value={userData.message}
                     onChange={postUserData}
                   ></textarea>

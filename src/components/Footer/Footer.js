@@ -23,8 +23,8 @@ const Footer = () => {
             href="#"
             className="flex title-font font-medium items-center md:justify-start justify-center text-white"
           >
-            <img src={logo} className="w-10 h-10 rounded-full" alt="" />
-            <span className="ml-3 text-xl">Ashutosh</span>
+            <img src={logo} className="w-20 h-20 rounded-full" alt="" />
+            {/* <span className="ml-3 text-xl">Ashutosh</span> */}
           </a>
           <span className="flex items-center sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a
@@ -54,6 +54,22 @@ const Footer = () => {
           </span>
         </div>
       </footer>
+      <div className=" fixed top-72 right-12 z-50 text-black" >
+        <div className=" flex items-center justify-between flex-col">
+          <div className=" w-8 h-8 bg-red-700 relative mt-2 rounded">
+            <i class="fab fa-facebook-f absolute top-1/4 left-1/4 text-white"></i>
+          </div>
+          <div className=" w-8 h-8 bg-red-700 relative mt-2 rounded">
+            <i class="fab fa-linkedin-in absolute top-1/4 left-1/4 text-white"></i>
+          </div>
+          <div className=" w-8 h-8 bg-red-700 relative mt-2 rounded">
+            <i class="fab fa-twitter absolute top-1/4 left-1/4 text-white"></i>
+          </div>
+          <div className=" w-8 h-8 bg-red-700 relative mt-2 rounded">
+            <i class="fab fa-instagram absolute top-1/4 left-1/4 text-white"></i>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

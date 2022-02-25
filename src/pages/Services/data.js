@@ -1,0 +1,33 @@
+export default [{
+    img: "",
+    title: "",
+    desc: "",
+}, {
+    img: "",
+    title: "",
+    desc: "",
+}, {
+    img: "",
+    title: "",
+    desc: "",
+}, {
+    img: "",
+    title: "",
+    desc: "",
+}, {
+    img: "",
+    title: "",
+    desc: "",
+}, {
+    img: "",
+    title: "",
+    desc: "",
+}, {
+    img: "",
+    title: "",
+    desc: "",
+}, {
+    img: "",
+    title: "",
+    desc: "",
+}, ]

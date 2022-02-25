@@ -16,8 +16,8 @@ function Nav() {
                   href="#"
                   class="flex title-font font-medium items-center md:justify-start justify-center text-white"
                 >
-                  <img src={logo} className="w-10 h-10 rounded-full" alt="" />
-                  <span class="ml-3 text-xl">Ashutosh</span>
+                  <img src={logo} className="w-20 h-20 rounded-full" alt="" />
+                  {/* <span class="ml-3 text-xl">Ashutosh</span> */}
                 </a>
               </div>
               <div className="hidden md:block">
@@ -30,6 +30,9 @@ function Nav() {
                   </Link>
                   <Link to="/services" class="mr-5 hover:text-red-300">
                     Services
+                  </Link>
+                  <Link to="/blogs" class="mr-5 hover:text-red-300">
+                    Blogs
                   </Link>
                   <Link to="/experiences" class="mr-5 hover:text-red-300">
                     Experiences
