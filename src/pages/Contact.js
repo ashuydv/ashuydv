@@ -22,7 +22,7 @@ const Contact = () => {
     const { name, email, message } = userData;
 
     send(
-      "service_f22pna8",
+      "service_gipqp8t",
       "template_uily6k6",
       userData,
       "user_Nz40lrmMUiWlHRD0TnzLG"
