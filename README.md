@@ -21,3 +21,5 @@ Perf:    WebGL · Canvas API · Core Web Vitals
 
 ## Connect
 🐦 @ashu_ydv18  |  💼 linkedin.com/in/ashuydv18
+
+![stats](https://github-readme-stats.vercel.app/api?username=ashuydv&show_icons=true&theme=default)
