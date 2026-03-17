@@ -1,16 +1,23 @@
-## Hi there 👋
+# Hi, I'm Ashutosh Yadav 👋
 
-<!--
-**ashuydv/ashuydv** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Senior Frontend Engineer · UI Architect · Mumbai
+Building Cloudshot — a multi-cloud intelligence platform (AWS/Azure/GCP)
 
-Here are some ideas to get you started:
+## What I work with
+Core:    ReactJS · TypeScript · Next.js · Node.js
+Web3:    Ethereum · Solidity · IPFS · WalletConnect
+Cloud:   AWS · Azure · GCP · Docker · Kubernetes
+Perf:    WebGL · Canvas API · Core Web Vitals
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Currently
+→ Leading UI architecture @ Bereej Technologies
+→ Building in public: Cloudshot dashboard viz layer
+→ Open to Senior / Staff / Founding Engineer roles
+
+## Recent wins
+⚡ 847ms → 94ms render on 200-node cloud dependency graph
+📦 38% bundle reduction on data-heavy SaaS dashboard
+🔗 Shipped Web3 browser ext with 400+ installs (Drypto)
+
+## Connect
+🐦 @ashu_ydv18  |  💼 linkedin.com/in/ashuydv18
